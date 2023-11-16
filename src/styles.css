@@ -1,0 +1,312 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-container {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+}
+
+.mulah-one {
+  display: flex;
+  justify-content: center;
+  color: rgb(247, 135, 37);
+  margin: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.greet-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* height: 50px; */
+  font-size: 40px;
+  width: 250px;
+  color: rgba(128, 128, 128);
+}
+
+.greet-text p {
+  margin: 0;
+}
+
+.loyalty-points {
+  margin: 30px;
+  margin-left: 0;
+  margin-bottom:0;
+  font-weight: bold;
+  color: rgb(247, 135, 37);
+}
+
+.box {
+  display: flex;
+  justify-content: flex-start;
+  margin: 50px;
+  margin-left: 0px;
+  width: 100px;
+}
+
+.input-textbox.number {
+  width: 300px;
+}
+
+.input-textbox {
+  border: none;
+}
+
+.select-textbox {
+  border: none;
+  border-bottom: 2px solid orange;
+  margin-right: 10px;
+}
+.input-textbox.underline {
+  border-bottom: 2px solid orange;
+  outline:none;
+}
+
+.input-select-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 300px;
+}
+
+.button-container {
+  display: flex;
+  width: 300px;
+  /* margin:50px; */
+}
+
+.button {
+  color: white;
+  width: 410px;
+  border: none;
+  border-radius: 100px;
+  background-color: rgb(247, 135, 37);
+  height: 50px;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+/** MODAL */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: white;
+  border: none;
+  border-radius: 30px;
+  height: 250px;
+  width: 350px;
+}
+
+.modal-button-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.modal-button {
+  background-color: rgb(247, 135, 37);
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 250px;
+  color: white;
+}
+
+.modal-sentence-one {
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+}
+
+.powered-by-mulah {
+  margin: 30px;
+}
+
+.container-today {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mulah {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  color: rgb(247, 135, 37);
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  color: rgba(128, 128, 128);
+  font-size: 30px;
+  width: 190px;
+}
+
+.details {
+  font-size: 15px;
+  margin: 10px;
+  margin-left: 0;
+}
+
+.birthday {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  width: 190px;
+}
+
+.name-textbox {
+  display: flex;
+  flex-direction: column;
+  width: 190px;
+  color: rgb(3, 0, 0);
+  margin: 10px;
+  outline-color:grey
+}
+
+.name-textbox-one {
+  border: 1px solid;
+  border-radius: 5px;
+  margin: 5px;
+  margin-left: 0;
+  height: 20px;
+}
+
+.date-box {
+  display: flex;
+  width: 190px;
+  margin-top: 10px;
+}
+
+.date-box-one {
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.date-box-two {
+  border: 1px solid;
+  width: 40px;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.date-box-three {
+  width: 60px;
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  width: 190px;
+  margin: 10px;
+  margin-bottom:4px;
+}
+
+.email-textbox {
+  width: 200px;
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.email-checkbox {
+  display: flex;
+  width: 200px;
+}
+.email-checkbox p {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  color:grey
+}
+
+.button-container-two {
+  display: flex;
+}
+
+.continue-button {
+  margin-top: 30px;
+  border: none;
+  border-radius: 30px;
+  background-color: rgb(247, 135, 37);
+  color: white;
+  height: 40px;
+  width: 210px;
+}
+
+.continue-button:hover {
+  cursor: pointer;
+}
+
+.p-tag{
+    color:red;
+    font-size:10px;
+}
+
+.p-tag-one {
+    display:flex;
+    width:190px;
+    margin:5px
+}
+
+.p-tag-two {
+    display:flex;
+    width:190px;
+    margin:5px;
+    margin-top:2px;
+    margin-bottom:10px;
+}
+
+.third-website{
+  display: flex;
+  justify-content: center;
+  color: rgb(247, 135, 37);
+  margin: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+}
