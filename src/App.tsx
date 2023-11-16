@@ -1,17 +1,14 @@
 import { useState, useRef, useEffect } from "react";
 import "./styles.css";
 
-let newInput = "";
-let nameInput = "";
 
 function App() {
   //Refs
-  const textBoxInput = useRef();
-  const nameTextBox = useRef();
-  const birthdayTextBox = useRef();
-  const birthdayTextBox1 = useRef();
-  const birthdayTextBox2 = useRef();
-  const emailTextBox = useRef();
+  const textBoxInput = useRef<HTMLInputElement | null>(null);;
+  const nameTextBox = useRef<HTMLInputElement | null>(null);;
+  const birthdayTextBox = useRef<HTMLInputElement | null>(null);;
+  const birthdayTextBox1 = useRef<HTMLInputElement | null>(null);;
+  const birthdayTextBox2 = useRef<HTMLInputElement | null>(null);;
 
   //State variables
   const [modal, setModal] = useState(false);
@@ -26,15 +23,13 @@ function App() {
   }, []);
 
   const handlePhoneNumberChange = () => {
-    let input = textBoxInput.current.value;
+    let input = textBoxInput?.current?.value ;
 
     //if valid 9 digit phone number, proceed to next website
-    if (input.length === 9 && !isNaN(input)) {
+    if (input?.length === 9 && !isNaN(parseFloat(input))) {
       setWelcomeWebsite(false);
       setVerificationWebsite(true);
 
-      newInput = input;
-      console.log("newInput", newInput);
     } else {
       setShowErrorMessage(true);
       toggleModal();
@@ -50,11 +45,8 @@ function App() {
   };
 
   const handleNameChange = () => {
-    let nameText = nameTextBox?.current.value;
+    let nameText = nameTextBox?.current?.value;
     console.log("nameText", nameText);
-    if (nameText !== 0) {
-      nameInput = nameText;
-    }
   };
   return (
     <>
